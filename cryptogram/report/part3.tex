@@ -1,0 +1,18 @@
+\part{个人总结}
+
+在本次编程实验中，我主要负责完成了：
+
+\begin{itemize}
+    \item AES密码的加密、解密、密钥生成、仿真分析，对应的代码文件为
+    \begin{itemize}
+        \item AES\_enc.m AES加密模块
+        \item AES\_dec.m AES解密模块
+        \item AES\_key.m AES密钥生成模块
+        \item AES\_box.m AES查找表生成
+        \item AES\_sim.m AES仿真分析
+    \end{itemize}
+\end{itemize}
+
+本次编程实验在第一次实验的基础上加入了波形信道模块和密码模块。因为第一次实验的相关模块封装较好，且加解密算法可参考标准的官方文档，故整体的实现难度不大。
+
+在AES密码模块的实现中，我参考了FIPS 197(Federal Information Processing Standards)中的AES加解密标准，实现了标准的AES加解密模块。在实现过程中，我将$GF(2^8)$域上的部分运算通过查找表的方式实现，较为显著地提高了加解密算法的效率。对标准AES密码的实现进一步加深了我对$GF(2^8)$域上的运算和代数性质的理解，在仿真和分析的过程中也让我对密码模块和通信系统整体的关联上有了新的认识和体会。
