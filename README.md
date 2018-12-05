@@ -2,6 +2,6 @@
 
 ## project_1 conv_coding
 
-## project_2 
+## project_2 cryptogram
 
 ## project_3
